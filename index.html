@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/variables.css" />
+    <link rel="stylesheet" href="./src/css/header.css" />
+    <link rel="stylesheet" href="./src/css/footer.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
     <title>Star Wars</title>
   </head>
@@ -17,86 +19,97 @@
       />
       <nav class="page-header__nav">
         <ul class="page-header__nav-list">
-          <li><button class="page-header__nav-button">FILMS</button></li>
-          <li><button class="page-header__nav-button">PEOPLE</button></li>
-          <li><button class="page-header__nav-button">PLANETS</button></li>
-          <li><button class="page-header__nav-button">VECHICLES</button></li>
+          <li><a href="#films" class="page-header__nav-anchor">FILMS</a></li>
+          <li><a href="#people" class="page-header__nav-anchor">PEOPLE</a></li>
+          <li>
+            <a href="#planets" class="page-header__nav-anchor">PLANETS</a>
+          </li>
+          <li>
+            <a href="#vechicles" class="page-header__nav-anchor">VECHICLES</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="films-section catogory-section">
-        <h2 class="films__title">Films</h2>
-        <ul>
-          <li class="film-card">
+      <!-- Films section -->
+      <section>
+        <h2 class="category-title" id="films">Films</h2>
+        <ul class="card__container">
+          <li class="card">
             <img
               src="./src/assets/images/films/a_new_hope.webp"
               alt="Star Wars, A New Hope banner"
-              class="film-card__image"
+              class="card__image"
             />
-            <h3 class="film-card__title">A New Hope</h3>
-            <p class="film-card__director">Director: George Lucas</p>
-            <p class="film-card__episode">Episode: 4</p>
-            <p class="film-card__realise-date">Realise date: 1977-05-25</p>
+            <div class="card__text-container">
+              <h3 class="card__title">A New Hope</h3>
+              <p class="card__text">Director: George Lucas</p>
+              <p class="card__text">Episode: 4</p>
+              <p class="card__text">Realise date: 1977-05-25</p>
+            </div>
           </li>
-          <li class="film-card">
+          <li class="card">
             <img
               src="./src/assets/images/films/a_new_hope.webp"
               alt="Star Wars, A New Hope banner"
-              class="film-card__image"
+              class="card__image"
             />
-            <h3 class="film-card__title">A New Hope</h3>
-            <p class="film-card__director">Director: George Lucas</p>
-            <p class="film-card__episode">Episode: 4</p>
-            <p class="film-card__realise-date">Realise date: 1977-05-25</p>
+            <div class="card__text-container">
+              <h3 class="card__title">A New Hope</h3>
+              <p class="card__text">Director: George Lucas</p>
+              <p class="card__text">Episode: 4</p>
+              <p class="card__text">Realise date: 1977-05-25</p>
+            </div>
           </li>
-          <li class="film-card">
+          <li class="card">
             <img
               src="./src/assets/images/films/a_new_hope.webp"
               alt="Star Wars, A New Hope banner"
-              class="film-card__image"
+              class="card__image"
             />
-            <h3 class="film-card__title">A New Hope</h3>
-            <p class="film-card__director">Director: George Lucas</p>
-            <p class="film-card__episode">Episode: 4</p>
-            <p class="film-card__realise-date">Realise date: 1977-05-25</p>
+            <div class="card__text-container">
+              <h3 class="card__title">A New Hope</h3>
+              <p class="card__text">Director: George Lucas</p>
+              <p class="card__text">Episode: 4</p>
+              <p class="card__text">Realise date: 1977-05-25</p>
+            </div>
           </li>
-          <li class="film-card">
+          <li class="card">
             <img
               src="./src/assets/images/films/a_new_hope.webp"
               alt="Star Wars, A New Hope banner"
-              class="film-card__image"
+              class="card__image"
             />
-            <h3 class="film-card__title">A New Hope</h3>
-            <p class="film-card__director">Director: George Lucas</p>
-            <p class="film-card__episode">Episode: 4</p>
-            <p class="film-card__realise-date">Realise date: 1977-05-25</p>
-          </li>
-          <li class="film-card">
-            <img
-              src="./src/assets/images/films/a_new_hope.webp"
-              alt="Star Wars, A New Hope banner"
-              class="film-card__image"
-            />
-            <h3 class="film-card__title">A New Hope</h3>
-            <p class="film-card__director">Director: George Lucas</p>
-            <p class="film-card__episode">Episode: 4</p>
-            <p class="film-card__realise-date">Realise date: 1977-05-25</p>
+            <div class="card__text-container">
+              <h3 class="card__title">A New Hope</h3>
+              <p class="card__text">Director: George Lucas</p>
+              <p class="card__text">Episode: 4</p>
+              <p class="card__text">Realise date: 1977-05-25</p>
+            </div>
           </li>
         </ul>
       </section>
-      <section class="people-section catogory-section">
+      <section class="category-title" id="people">
         <h2>People</h2>
+        <ul class="card__container"></ul>
       </section>
-      <section class="planets-section catogory-section">
+      <section class="category-title" id="planets">
         <h2>Planets</h2>
+        <ul class="card__container"></ul>
       </section>
-      <section class="vehicles-section catogory-section">
+      <section class="category-title" id="vechicles">
         <h2>Vechicles</h2>
+        <ul class="card__container"></ul>
       </section>
     </main>
     <footer>
-      <p>Student project by: Sebastian Braende</p>
+      <p class="footer_description">Student project by: Sebastian Braende</p>
+      <a
+        class="footer__link"
+        href="https://github.com/sbraende/"
+        target="_blank"
+        >GitHub</a
+      >
     </footer>
     <script type="module" src="/src/js/app.js"></script>
   </body>

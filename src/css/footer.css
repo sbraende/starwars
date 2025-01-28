@@ -1,0 +1,21 @@
+footer {
+  padding: var(--spacing-x-large) 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-small);
+}
+
+.footer_description {
+  font-style: italic;
+}
+
+.footer__link {
+  font-weight: 700;
+  color: var(--color-dark-gray);
+  transition: all 0.5s;
+}
+
+.footer__link:hover {
+  color: var(--color-primary);
+}
