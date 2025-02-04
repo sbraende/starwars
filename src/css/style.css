@@ -59,9 +59,12 @@ section {
   padding-bottom: var(--spacing-small);
 }
 
-.card__text {
+.card__text-container p {
   word-break: break-all;
 }
+
+/* .card__text {
+} */
 
 .card__text:last-child {
   padding-bottom: var(--spacing-medium);

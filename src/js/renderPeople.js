@@ -3,12 +3,6 @@ import getImageUrl from "./getImageUrl";
 const renderPeople = (people) => {
   const peopleList = document.querySelector(".people-container");
   people.forEach((person) => {
-    // title: name
-    // birth_year:
-    // gender
-    // mass
-    // height
-
     const card = document.createElement("li");
     const image = document.createElement("img");
     const textContainer = document.createElement("div");
@@ -22,10 +16,6 @@ const renderPeople = (people) => {
     image.classList.add("card__image");
     textContainer.classList.add("card__text-container");
     name.classList.add("card__title");
-    birthYear.classList.add("card__text");
-    gender.classList.add("card__text");
-    mass.classList.add("card__text");
-    height.classList.add("card__text");
 
     image.src = getImageUrl("people", person);
     name.textContent = `${person.name}`;

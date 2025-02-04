@@ -18,10 +18,6 @@ const renderFilms = (films) => {
     image.classList.add("card__image");
     textContainer.classList.add("card__text-container");
     title.classList.add("card__title");
-    director.classList.add("card__text");
-    producer.classList.add("card__text");
-    episode.classList.add("card__text");
-    releaseDate.classList.add("card__text");
 
     image.src = getImageUrl("films", film);
     title.textContent = `${film.title}`;
