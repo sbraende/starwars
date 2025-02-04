@@ -3,7 +3,6 @@ import getImageUrl from "./getImageUrl";
 const renderPlanets = (planets) => {
   const planetsList = document.querySelector(".planets-container");
   planets.forEach((planet) => {
-    console.log(planet.name);
     const card = document.createElement("li");
     const image = document.createElement("img");
     const textContainer = document.createElement("div");
