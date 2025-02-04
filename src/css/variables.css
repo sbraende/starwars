@@ -4,6 +4,7 @@
   --color-primary: white;
   --color-primary-gray: lightgray;
   --color-dark-gray: gray;
+  --color-yellow: rgb(255, 232, 31);
 
   /* SPACING */
   --spacing-x-small: 0.25rem;

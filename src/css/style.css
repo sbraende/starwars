@@ -11,7 +11,6 @@ body {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-/* MAIN */
 main {
   width: 100%;
   max-width: 1200px;
@@ -54,6 +53,10 @@ section {
 
 .card__title {
   padding-bottom: var(--spacing-small);
+}
+
+.card__text {
+  word-break: break-all;
 }
 
 .card__text:last-child {
