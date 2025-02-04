@@ -49,6 +49,9 @@ section {
 
 .card__text-container {
   padding: var(--spacing-medium);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-x-small);
 }
 
 .card__title {
