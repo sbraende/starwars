@@ -1,12 +1,10 @@
-import findFilmImage from "./findFilmImage.js";
+import getImageUrl from "./getImageUrl.js";
 
 // Render films
 const renderFilms = (films) => {
   const filmsList = document.querySelector(".films-container");
 
   films.forEach((film) => {
-    // console.log(film);
-
     const card = document.createElement("li");
     const image = document.createElement("img");
     const textContainer = document.createElement("div");
@@ -25,7 +23,7 @@ const renderFilms = (films) => {
     episode.classList.add("card__text");
     releaseDate.classList.add("card__text");
 
-    image.src = findFilmImage(film);
+    image.src = getImageUrl("films", film);
     title.textContent = `${film.title}`;
     director.textContent = `Director: ${film.director}`;
     producer.textContent = `Producer: ${film.producer}`;
