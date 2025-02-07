@@ -5,7 +5,7 @@ import fetchVechicles from "./fetchVechicles.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   fetchFilms();
-  fetchPeople();
-  fetchPlanets();
-  fetchVechicles();
+  // fetchPeople();
+  // fetchPlanets();
+  // fetchVechicles();
 });

@@ -1,10 +1,6 @@
-import getImageUrl from "./getImageUrl";
-
 const renderVechicles = (vechicles) => {
   const vechicleList = document.querySelector(".vechicles-container");
   vechicles.forEach((vechicle) => {
-    console.log(vechicle.name);
-
     const card = document.createElement("li");
     const image = document.createElement("img");
     const textContainer = document.createElement("div");
@@ -20,7 +16,7 @@ const renderVechicles = (vechicles) => {
     textContainer.classList.add("card__text-container");
     name.classList.add("card__title");
 
-    image.src = getImageUrl("vechicles", vechicle);
+    // image.src = getImageUrl("vechicles", vechicle);
     name.textContent = `${vechicle.name}`;
     model.textContent = `Model: ${vechicle.model}`;
     costInCredits.textContent = `Cost in Credits: ${vechicle.cost_in_credits}`;
