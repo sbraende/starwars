@@ -1,3 +1,6 @@
+import getImagePath from "./getImagePath.js";
+import planetsImageList from "./planetsImageList.js";
+
 const renderPlanets = (planets) => {
   const planetsList = document.querySelector(".planets-container");
   planets.forEach((planet) => {
@@ -15,7 +18,7 @@ const renderPlanets = (planets) => {
     textContainer.classList.add("card__text-container");
     name.classList.add("card__title");
 
-    // image.src = getImageUrl("planets", planet);
+    image.src = getImagePath(planetsImageList, planet.name);
     name.textContent = `${planet.name}`;
     diameter.textContent = `Diameter: ${planet.diameter}`;
     terrain.textContent = `Terrain: ${planet.terrain}`;

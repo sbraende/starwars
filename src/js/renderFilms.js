@@ -1,6 +1,6 @@
 import filmImageList from "./filmImageList.js";
+import getImagePath from "./getImagePath.js";
 
-// Render films
 const renderFilms = (films) => {
   const filmsList = document.querySelector(".films-container");
 
@@ -19,20 +19,7 @@ const renderFilms = (films) => {
     textContainer.classList.add("card__text-container");
     title.classList.add("card__title");
 
-    console.log(film.title);
-
-    let foundFilm;
-    try {
-      foundFilm = filmImageList.find(
-        (filmImageItem) =>
-          film.title.trim().toLowerCase() ===
-          filmImageItem.title.trim().toLocaleLowerCase()
-      );
-      image.src = foundFilm.path;
-    } catch (error) {
-      console.error(error);
-    }
-
+    image.src = getImagePath(filmImageList, film.title);
     title.textContent = `${film.title}`;
     director.textContent = `Director: ${film.director}`;
     producer.textContent = `Producer: ${film.producer}`;

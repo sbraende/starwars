@@ -1,3 +1,6 @@
+import peopleImageList from "./peopleImageList.js";
+import getImagePath from "./getImagePath.js";
+
 const renderPeople = (people) => {
   const peopleList = document.querySelector(".people-container");
   people.forEach((person) => {
@@ -15,7 +18,7 @@ const renderPeople = (people) => {
     textContainer.classList.add("card__text-container");
     name.classList.add("card__title");
 
-    // image.src = getImageUrl("people", person);
+    image.src = getImagePath(peopleImageList, person.name);
     name.textContent = `${person.name}`;
     birthYear.textContent = `Birth year: ${person.birth_year}`;
     gender.textContent = `Gender: ${person.gender}`;
