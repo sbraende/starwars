@@ -4,7 +4,6 @@ import getImagePath from "./getImagePath.js";
 const renderVechicles = (vechicles) => {
   const vechicleList = document.querySelector(".vechicles-container");
   vechicles.forEach((vechicle) => {
-    console.log(vechicle.name);
     const card = document.createElement("li");
     const image = document.createElement("img");
     const textContainer = document.createElement("div");

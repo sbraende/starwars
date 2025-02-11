@@ -5,7 +5,7 @@ const getImagePath = (imageList, queryItem) => {
         listItem.title.trim().toLowerCase() === queryItem.trim().toLowerCase()
     ).path;
   } catch (error) {
-    console.error(`Could not find image: ${error}`);
+    throw new Error(`Could not find image that matches title/name. ${error}`);
   }
 };
 

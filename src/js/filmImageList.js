@@ -3,7 +3,7 @@ const extension = ".webp";
 
 const filmImageList = [
   {
-    title: "A New Hope",
+    title: "a new hope",
     path: baseUrl + "a_new_hope" + extension,
   },
   {
