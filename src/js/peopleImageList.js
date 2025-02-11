@@ -1,4 +1,4 @@
-const baseUrl = "./src/assets/images/people/";
+const baseUrl = "/assets/images/people/";
 const extension = ".webp";
 
 const peopleImageList = [
@@ -20,11 +20,11 @@ const peopleImageList = [
   },
   {
     title: "Leia Organa",
-    path: baseUrl + "Leia_Organa" + extension,
+    path: baseUrl + "leia_organa" + extension,
   },
   {
     title: "Owen Lars",
-    path: baseUrl + "Owen_Lars" + extension,
+    path: baseUrl + "owen_lars" + extension,
   },
   {
     title: "Beru Whitesun lars",

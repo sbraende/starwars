@@ -1,4 +1,4 @@
-const baseUrl = "./src/assets/images/vechicles/";
+const baseUrl = "/assets/images/vechicles/";
 const extension = ".webp";
 
 const vechiclesImageList = [

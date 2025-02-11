@@ -1,4 +1,4 @@
-const baseUrl = "./src/assets/images/planets/";
+const baseUrl = "/assets/images/planets/";
 const extension = ".webp";
 
 const planetsImageList = [
