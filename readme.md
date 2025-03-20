@@ -4,6 +4,8 @@ A student project for Høyskolen Kristiania, showcasing asynchronous JavaScript 
 
 **Published website:** https://sbraende-starwars.netlify.app
 
+![screenshot webpage](public/assets/images/screenshots/screenshot.png)
+
 ## Features
 
 - Fetches and displays data dynamically from SWAPI.
