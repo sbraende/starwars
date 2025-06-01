@@ -50,6 +50,10 @@ npm run dev
 - Design inspiration:
   - [StarWars](https://www.starwars.com/)
 
+## AI-Help
+
+- ChatGPT helped with async issues with nested fetching for people.
+
 ## License
 
 This project is licensed under the [MIT License](./LICENSE). Feel free to use, modify, and distribute this project as per the terms of the license.

@@ -28,14 +28,20 @@
   align-items: stretch;
 }
 
-.page-header__nav-anchor {
-  background-color: transparent;
+.page-header__nav-button {
+  padding: var(--spacing-small);
+  background-color: var(--color-yellow);
   border: 0;
-  color: var(--color-primary-gray);
+  border-radius: 4rem;
+  color: var(--color-background);
   font-size: var(--font-size-base);
-  transition: all 0.5s;
+  transition: all 0.25s;
 }
 
-.page-header__nav-anchor:hover {
+.page-header__nav-button:hover {
+  color: var(--color-primary);
+}
+
+.nav-active {
   color: var(--color-primary);
 }

@@ -19,20 +19,32 @@
       />
       <nav class="page-header__nav">
         <ul class="page-header__nav-list">
-          <li><a href="#films" class="page-header__nav-anchor">FILMS</a></li>
-          <li><a href="#people" class="page-header__nav-anchor">PEOPLE</a></li>
           <li>
-            <a href="#planets" class="page-header__nav-anchor">PLANETS</a>
+            <button class="page-header__nav-button nav-button-films nav-active">
+              FILMS
+            </button>
           </li>
           <li>
-            <a href="#vechicles" class="page-header__nav-anchor">VECHICLES</a>
+            <button class="page-header__nav-button nav-button-people">
+              PEOPLE
+            </button>
+          </li>
+          <li>
+            <button class="page-header__nav-button nav-button-planets">
+              PLANETS
+            </button>
+          </li>
+          <li>
+            <button class="page-header__nav-button nav-button-vehicles">
+              VEHICLES
+            </button>
           </li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="main">
       <!-- Films section -->
-      <section id="films">
+      <section class="films">
         <h2 class="category-title">Films</h2>
         <p class="error films__error">Could not get films 😢</p>
         <ul class="card__container films-container">
@@ -51,20 +63,20 @@
           </li> -->
         </ul>
       </section>
-      <section id="people">
+      <section class="people">
         <h2 class="category-title">People</h2>
-        <p class="error people__error"></p>
+        <p class="error people__error">Could not get people 😢</p>
         <ul class="card__container people-container"></ul>
       </section>
-      <section id="planets">
+      <section class="planets">
         <h2 class="category-title">Planets</h2>
-        <p class="error planets__error"></p>
+        <p class="error planets__error">Could not get planets 😢</p>
         <ul class="card__container planets-container"></ul>
       </section>
-      <section id="vechicles">
-        <h2 class="category-title">Vechicles</h2>
-        <p class="error vechicles__error"></p>
-        <ul class="card__container vechicles-container"></ul>
+      <section class="vehicles">
+        <h2 class="category-title">Vehicles</h2>
+        <p class="error vehicles__error">Could not get planets</p>
+        <ul class="card__container vehicles-container"></ul>
       </section>
     </main>
     <footer>

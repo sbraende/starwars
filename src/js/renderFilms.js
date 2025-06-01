@@ -19,13 +19,13 @@ const renderFilms = (films) => {
     textContainer.classList.add("card__text-container");
     title.classList.add("card__title");
 
-    image.src = getImagePath(filmImageList, film.title);
-    title.textContent = `${film.title}`;
-    director.textContent = `Director: ${film.director}`;
-    producer.textContent = `Producer: ${film.producer}`;
-    episode.textContent = `Episode: ${film.episode_id}`;
-    releaseDate.textContent = `Realise Date: ${film.release_date}`;
-    episode.textContent = `Episode: ${film.episode_id}`;
+    image.src = getImagePath(filmImageList, film.properties.title);
+    title.textContent = `${film.properties.title}`;
+    director.textContent = `Director: ${film.properties.director}`;
+    producer.textContent = `Producer: ${film.properties.producer}`;
+    episode.textContent = `Episode: ${film.properties.episode_id}`;
+    releaseDate.textContent = `Realise Date: ${film.properties.release_date}`;
+    episode.textContent = `Episode: ${film.properties.episode_id}`;
 
     filmsList.append(card);
     card.append(image, textContainer);

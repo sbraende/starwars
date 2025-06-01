@@ -1,9 +1,23 @@
 import peopleImageList from "./peopleImageList.js";
 import getImagePath from "./getImagePath.js";
 
-const renderPeople = (people) => {
+const getPersonDetails = async (personURL) => {
+  try {
+    const response = await fetch(personURL);
+    const data = await response.json();
+    return data.result.properties;
+  } catch (error) {
+    console.error("Failed to fetch person details:", error);
+    const errorPeople = document.querySelector(".people__error");
+    errorPeople.classList.add("error--visable");
+  }
+};
+
+const renderPeople = async (people) => {
   const peopleList = document.querySelector(".people-container");
-  people.forEach((person) => {
+
+  for (const person of people) {
+    const personDetails = await getPersonDetails(person.url);
     const card = document.createElement("li");
     const image = document.createElement("img");
     const textContainer = document.createElement("div");
@@ -20,15 +34,15 @@ const renderPeople = (people) => {
 
     image.src = getImagePath(peopleImageList, person.name);
     name.textContent = `${person.name}`;
-    birthYear.textContent = `Birth year: ${person.birth_year}`;
-    gender.textContent = `Gender: ${person.gender}`;
-    mass.textContent = `Mass: ${person.mass}`;
-    height.textContent = `Height: ${person.height}`;
+    birthYear.textContent = `Birth year: ${personDetails.birth_year}`;
+    gender.textContent = `Gender: ${personDetails.gender}`;
+    mass.textContent = `Mass: ${personDetails.mass}`;
+    height.textContent = `Height: ${personDetails.height}`;
 
     peopleList.append(card);
     card.append(image, textContainer);
     textContainer.append(name, birthYear, gender, mass, height);
-  });
+  }
 };
 
 export default renderPeople;
